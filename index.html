@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Percentage Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <!-- Logo -->
+  <img src="logo.png" alt="MiddleTech Logo" class="calculator-logo">
+
+  <h2>Live Percentage Calculator</h2>
+
+  <div class="input-group">
+    <input type="number"
+      id="percentage"
+      placeholder="Enter percentage"
+      oninput="calculateLive()">
+    <span class="suffix">%</span>
+  </div>
+
+  <input type="text"
+    id="amount"
+    placeholder="Enter amount"
+    oninput="formatAmount(this); calculateLive();">
+
+  <div id="resultBox">
+    <p class="result-title">Live Result</p>
+    <p id="resultValue">—</p>
+  </div>
+</div>
+
+<!-- ABOUT + FAQ SECTION -->
+<div class="info-section">
+  <h2>About This Calculator</h2>
+  <p>Welcome to our <strong>Live Percentage Calculator</strong>. your quick and effortless tool for handling percentages in everyday life. Whether you're figuring out discounts, splitting tips, or tracking changes in values, this calculator gives you accurate results instantly. It’s designed to make percentage calculations <strong>simple, fast, and intuitive</strong>, so you can focus on what matters most.</p>
+
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <h3>What is a percentage?</h3>
+    <p>A percentage is a way to express a number as a portion of 100. It helps you understand how one quantity relates to another in a simple, standardized format. For instance, if there are 200 books on a shelf and 50 are blue, then 25% of the books are blue.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How do you calculate a percentage?</h3>
+    <p>To calculate a percentage, divide the part by the total amount, then multiply by 100. For example, if you have 60 oranges and 15 are ripe, dividing 15 by 60 gives 0.25. Multiply by 100, and you find that <strong>25% of the oranges are ripe</strong>.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Why percentages are important</h3>
+    <p>Percentages are everywhere  from shopping discounts and tax rates to investment growth and performance metrics. Understanding percentages helps you <strong>make informed decisions</strong>, plan your finances, and evaluate changes in value accurately, whether at work or in daily life.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
